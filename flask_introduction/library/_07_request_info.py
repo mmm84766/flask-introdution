@@ -21,3 +21,6 @@ def request_info():
     client_location = requests.get(geoip_url).json()
     return render_template('request/info.html',
                            client_location=client_location)
+
+# Line 20
+# request.remote_addr insted give our ip addres
